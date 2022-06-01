@@ -1,5 +1,5 @@
 import { assertEquals } from "../deps.ts";
-import { createOpenDBClient, OpenBDClient } from "../models/mod.ts";
+import { createOpenBDClient, OpenBDClient } from "../models/mod.ts";
 
 Deno.test("new OpenBDClient()", async () => {
   const client = new OpenBDClient();
@@ -12,7 +12,7 @@ Deno.test("new OpenBDClient()", async () => {
 });
 
 Deno.test("createOpenDBClient()", async () => {
-  const client = createOpenDBClient();
+  const client = createOpenBDClient();
 
   const res = await client.searchBookRaw([
     "978-4-049125207", // キノの旅
