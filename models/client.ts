@@ -11,7 +11,7 @@ export class OpenBDClient {
   }
 }
 
-export const createOpenDBClient = () => {
+export const createOpenBDClient = () => {
   /**
    * @param isbn {string|string[]} 本のISBNコード。stringかstring[]
    * @returns 書籍情報。扱いやすく調整**していない**ので使いにくいかも
